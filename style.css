@@ -1,0 +1,67 @@
+html {
+    overflow-y: scroll; 
+}
+
+body {
+  background-color: #4575db;
+}
+
+h1{
+  color: white;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+}
+.card {
+  display: grid;
+  grid-gap: 13px;
+  box-shadow: 1px 1px 5px black;
+  background-color: white;
+  padding: 13px;
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2px;
+  margin: 7px auto;
+}
+
+.filters > * {
+  background: #FFFFFFAA;
+  padding: 9px;
+  text-align: center;
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+  border: none;
+  font-size: inherit;
+  background: white;
+}
+
+.texting-info {
+  overflow: hidden;
+}
+
+.texting-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #880022;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.texting-meta {
+  color: #777;
+  align-self: end;
+}
+
+.texting-year {
+  color: #777;
+}

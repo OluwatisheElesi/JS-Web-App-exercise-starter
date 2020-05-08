@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<h1>Broadway Musicals</h1>
+	<div class="filters">
+    <div onclick="fetchData('https://jsroutes.oluwatisheelesi.repl.co/');">All Musicals</div>
+    <div onclick="fetchData('https://jsroutes.oluwatisheelesi.repl.co/top-five/');">Top 5</div>
+    <input placeholder="Search a year" type="text" onkeydown="if (event.keyCode === 13) {fetchData('https://jsroutes.oluwatisheelesi.repl.co/get-year/'+this.value);this.value='';}">
+	</div>
+  
+	<div class="container">
+		<!-- we will use javascript to insert movies here... -->
+	</div>
+
+	<script src="script.js">
+
+	</script>
+</body>
+
+</html>
